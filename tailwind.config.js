@@ -6,7 +6,48 @@ module.exports = {
     ],
     darkMode: "class", // or 'media' or 'class'
     theme: {
-        extend: {},
+        boxShadow: {
+            ul: "0px 2px 0px 0px #24CEE5;",
+        },
+        extend: {
+            backgroundImage: {
+                sidebarLogo: "url(/themes/sidebarlogo.svg)",
+                ohh:
+                    "linear-gradient(45deg, rgba(0,75,117,1) 0%, rgba(36,206,229,1) 100%);",
+            },
+            animation: {
+                wiggle: "wiggle 1s ease-in",
+                pingOne: "pingOne 500ms ease-in",
+                showDrop: "showDrop 200ms ease-in",
+                offDrop: "offDrop 200ms forwards",
+            },
+            keyframes: {
+                wiggle: {
+                    "0%": {
+                        transform: "rotate(-3deg)",
+                    },
+                    "50%": { transform: "rotate(3deg)" },
+                    "100%": { transform: "rotate(0deg)" },
+                },
+                pingOne: {
+                    "75%, 100%": {
+                        transform: "scale(1.2)",
+                        opacity: "0",
+                    },
+                },
+                showDrop: {
+                    "0%": { transform: "scaleY(0)" },
+                    "100%": { transform: "scaleY(1)" },
+                },
+                offDrop: {
+                    "0%": { transform: "scaleY(1)" },
+                    "100%": {
+                        transform: "scaleY(0)",
+                        visable: "hidden",
+                    },
+                },
+            },
+        },
     },
     variants: {
         extend: {

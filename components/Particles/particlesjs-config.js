@@ -1,7 +1,7 @@
 export const partilcesConfig = {
     particles: {
         number: {
-            value: 80,
+            value: 60,
             density: {
                 enable: true,
                 value_area: 800,
@@ -26,7 +26,7 @@ export const partilcesConfig = {
             },
         },
         opacity: {
-            value: 0.5,
+            value: 0.7,
             random: false,
             anim: {
                 enable: false,
@@ -75,7 +75,7 @@ export const partilcesConfig = {
                 mode: "repulse",
             },
             onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             resize: true,
