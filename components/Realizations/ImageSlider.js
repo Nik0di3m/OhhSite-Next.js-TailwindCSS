@@ -5,7 +5,6 @@ import {
 import next from "next";
 import Image from "next/image";
 import { useState } from "react";
-import { SliderData } from "./SliderData";
 
 const ImageSlider = ({ slides }) => {
     const [current, setCurrent] = useState(0);
@@ -35,7 +34,7 @@ const ImageSlider = ({ slides }) => {
                 className="h-8 absolute top-[50%] right-1 z-50 lg:h-16 hover:animate-bounce"
                 onClick={nextSilde}
             />
-            {SliderData.map((slide, index) => {
+            {slides.map((slide, index) => {
                 return (
                     <div
                         className={`${

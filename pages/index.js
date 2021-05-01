@@ -7,6 +7,7 @@ import Cards from "../components/Cards/Cards";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
 import CardsContaner from "../components/Cards/CardsContaner";
 import Realizations from "../components/Realizations/Realizations";
+import About from "../components/About/About";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
                 <Hero />
                 <CardsContaner />
                 <Realizations />
+                <About />
             </div>
         </div>
     );
