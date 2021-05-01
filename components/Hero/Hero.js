@@ -14,7 +14,7 @@ const Hero = () => {
                         Zdobywaj nowych klientów!
                     </h2>
                 </div>
-                <Button text="Bezpłatna wycena" />
+                <Button text="Bezpłatna wycena" link="/" />
             </div>
         </div>
     );
