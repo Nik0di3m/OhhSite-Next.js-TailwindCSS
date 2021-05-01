@@ -27,11 +27,11 @@ const ImageSlider = ({ slides }) => {
     return (
         <div className="flex relative mt-2 justify-center items-center overflow-x-auto h-52 w-[95vw] text-[#24cee5] lg:h-[50vh] sm:h-[50vh] lg:max-w-6xl lg:mt-6">
             <ArrowCircleLeftIcon
-                className="h-8  absolute top-[50%] left-1 z-50 lg:h-16 hover:animate-bounce"
+                className="h-8  absolute top-[50%] left-1 z-0 lg:h-16 hover:animate-bounce"
                 onClick={prevSlide}
             />
             <ArrowCircleRightIcon
-                className="h-8 absolute top-[50%] right-1 z-50 lg:h-16 hover:animate-bounce"
+                className="h-8 absolute top-[50%] right-1 z-0 lg:h-16 hover:animate-bounce"
                 onClick={nextSilde}
             />
             {slides.map((slide, index) => {
