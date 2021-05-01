@@ -27,6 +27,7 @@ const Header = () => {
                         src="/themes/logo.svg"
                         width={150}
                         height={50}
+                        alt="Ohhsite logo"
                     />
                 </div>
                 <div>

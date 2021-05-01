@@ -15,6 +15,10 @@ export default function Home() {
         <div className="bg-white overflow-hidden text-black dark:bg-[#1d1d1d] dark:text-white">
             <Head>
                 <title>OhhSite.</title>
+                <meta
+                    name="description"
+                    content="Tworzymy strony i sklepy internetowe! Używamy najnowszych technologi żeby strona była jak najlepsza!"
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="min-h-screen">
