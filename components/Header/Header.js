@@ -19,7 +19,7 @@ const Header = () => {
         setMobileMenu(!mobileMenu);
     };
     return (
-        <nav className="backdrop-filter backdrop-blur-sm fixed w-screen z-10 flex-col items-center justify-between bg-[#1d1d1d] bg-opacity-80 text-white">
+        <nav className="backdrop-filter backdrop-blur-sm fixed w-screen z-50 flex-col items-center justify-between bg-[#1d1d1d] bg-opacity-80 text-white">
             <Sidebar open={mobileMenu} toggle={toggle} />
             <div className="flex items-center justify-between p-2">
                 <div>
