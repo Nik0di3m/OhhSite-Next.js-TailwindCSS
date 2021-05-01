@@ -8,6 +8,10 @@ module.exports = {
     theme: {
         boxShadow: {
             ul: "0px 2px 0px 0px #24CEE5;",
+            strong: "0px 0px 9px 11px rgba(0,0,0,0.51)",
+        },
+        text: {
+            main: "#24cee5",
         },
         extend: {
             backgroundImage: {

@@ -9,7 +9,7 @@ const Sidebar = ({ open, toggle }) => {
             className={`${
                 open
                     ? "transform opacity-100 top-0"
-                    : "transform opacity-0 -top-full"
+                    : "transform opacity-0 hidden"
             } transition duration-200 ease-in-out bg-sidebarLogo bg-center bg-contain bg-no-repeat bg-white fixed w-screen h-screen z-50 text-black dark:bg-[#1d1d1d] dark:text-white`}
         >
             <div className="relative p-5">

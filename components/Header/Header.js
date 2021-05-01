@@ -51,7 +51,7 @@ const Header = () => {
                 >
                     <MenuIcon className="h-8 mb-1 text-white " />
                 </div>
-                <div className="hidden lg:flex">
+                <div className="hidden lg:flex lg:mr-5">
                     <MenuItemsLg
                         items="O nas"
                         link="/o-nas"
