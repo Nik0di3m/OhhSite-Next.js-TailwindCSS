@@ -7,7 +7,7 @@ import Cards from "./Cards";
 
 const CardsContaner = () => {
     return (
-        <div className="flex flex-wrap justify-around items-center w-screen">
+        <div className="flex flex-wrap justify-around items-center w-screen lg:mt-20">
             <Cards
                 icon={<ShoppingCartIcon className="h-14" />}
                 title="Sklepy internetowe"

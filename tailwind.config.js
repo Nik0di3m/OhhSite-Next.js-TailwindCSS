@@ -9,6 +9,7 @@ module.exports = {
         boxShadow: {
             ul: "0px 2px 0px 0px #24CEE5;",
             strong: "0px 0px 9px 5px rgba(0,0,0,0.35)",
+            button: "0px 0px 8px 2px rgba(0,0,0,0.35)",
         },
         text: {
             main: "#24cee5",
@@ -16,6 +17,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 sidebarLogo: "url(/themes/sidebarlogo.svg)",
+                faqImage: "url(/themes/faq/faq.webp)",
                 ohh:
                     "linear-gradient(45deg, rgba(0,75,117,1) 0%, rgba(36,206,229,1) 100%);",
             },

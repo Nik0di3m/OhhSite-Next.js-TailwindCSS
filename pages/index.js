@@ -8,6 +8,7 @@ import { ShoppingCartIcon } from "@heroicons/react/outline";
 import CardsContaner from "../components/Cards/CardsContaner";
 import Realizations from "../components/Realizations/Realizations";
 import About from "../components/About/About";
+import Faq from "../components/FAQ/Faq";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
                 <CardsContaner />
                 <Realizations />
                 <About />
+                <Faq />
             </div>
         </div>
     );

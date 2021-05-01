@@ -25,7 +25,7 @@ const ImageSlider = ({ slides }) => {
         return null;
     }
     return (
-        <div className="flex relative mt-2 justify-center items-center overflow-x-auto h-52 w-[95vw] text-[#24cee5] lg:h-[50vh] sm:h-[50vh] lg:max-w-6xl lg:mt-6">
+        <div className="flex relative border-4 dark:border-0 justify-center items-center overflow-x-auto h-52 w-[95vw] text-[#24cee5] lg:h-[50vh] sm:h-[50vh] lg:max-w-6xl lg:mt-6">
             <ArrowCircleLeftIcon
                 className="h-8  absolute top-[50%] left-1 z-10 lg:h-16 hover:animate-bounce"
                 onClick={prevSlide}

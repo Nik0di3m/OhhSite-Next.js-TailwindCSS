@@ -9,7 +9,7 @@ const About = () => {
                     <h1 className=" lg:text-6xl">
                         Jesteśmy
                     </h1>
-                    <h1 className="lg:text-5xl">
+                    <h1 className="lg:text-4xl">
                         profesjonalistami
                     </h1>
                 </div>
@@ -56,6 +56,7 @@ const About = () => {
                     src="/themes/onas/onasmini.webp"
                     width={1618}
                     height={1080}
+                    alt="Content"
                 />
             </div>
         </div>
