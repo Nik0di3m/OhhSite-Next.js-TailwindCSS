@@ -1,7 +1,8 @@
+import Image from "next/image";
 import FaqCard from "./FaqCard";
 const Faq = () => {
     return (
-        <div className="flex justify-center">
+        <div className="flex flex-row-reverse lg:bg-[#ededed] lg:dark:bg-[#0f0f0f]">
             <section className="flex flex-col text-white p-2 bg-faqImage bg-contain w-screen bg-no-repeat min-h-screen lg:hidden">
                 <div className="lg:hidden">
                     <div className="">
@@ -45,13 +46,13 @@ const Faq = () => {
                     </ul>
                 </div>
             </section>
-            <section className="hidden mt-3 flex-col lg:flex">
+            <section className="hidden mt-3 flex-col justify-center items-center lg:flex">
                 <div className="text-center">
                     <h1 className="text-5xl">
                         Jak możemy wspomóc Twój biznes?
                     </h1>
                 </div>
-                <div className="flex mt-3 max-w-[90vw] flex-wrap justify-center">
+                <div className="flex mt-3 max-w-[50vw] flex-wrap justify-center">
                     <FaqCard
                         number="1"
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper dolor vitae orci luctus, eu venenatis nulla placerat. Ut tempus tellus arcu, eu feugiat augue euismod at. Curabitur at convallis magna."
@@ -70,6 +71,13 @@ const Faq = () => {
                     />
                 </div>
             </section>
+            <div className="hidden max-w-[50%] lg:flex">
+                <Image
+                    src="/themes/faq/faq_desktop.jpg"
+                    width={1618}
+                    height={1080}
+                />
+            </div>
         </div>
     );
 };

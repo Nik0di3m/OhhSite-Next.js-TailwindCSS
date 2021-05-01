@@ -51,7 +51,7 @@ const About = () => {
                 <Button text="Więcej!" link="/o-nas" />
                 <Button text="Kontakt" link="/kontakt" />
             </section>
-            <div className="hidden lg:flex">
+            <div className="hidden min-w-[50%] lg:flex">
                 <Image
                     src="/themes/onas/onasmini.webp"
                     width={1618}
