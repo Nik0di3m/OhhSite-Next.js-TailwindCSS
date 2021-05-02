@@ -13,6 +13,7 @@ const Footer = () => {
                         src="/themes/logo.svg"
                         width={300}
                         height={150}
+                        alt="OhhSite Logo"
                     />
                 </div>
                 <div className="text-lg">
@@ -30,6 +31,7 @@ const Footer = () => {
                         src="/themes/logo.svg"
                         width={200}
                         height={150}
+                        alt="OhhSite logo"
                     />
                 </div>
                 <div className="flex flex-col">
