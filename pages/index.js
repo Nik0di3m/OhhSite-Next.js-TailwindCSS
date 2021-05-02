@@ -9,6 +9,9 @@ import CardsContaner from "../components/Cards/CardsContaner";
 import Realizations from "../components/Realizations/Realizations";
 import About from "../components/About/About";
 import Faq from "../components/FAQ/Faq";
+import Carusele from "../components/Carusele/Carusele";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
     return (
@@ -28,6 +31,9 @@ export default function Home() {
                 <Realizations />
                 <About />
                 <Faq />
+                <Carusele />
+                <Contact />
+                <Footer />
             </div>
         </div>
     );

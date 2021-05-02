@@ -3,7 +3,7 @@ import FaqCard from "./FaqCard";
 const Faq = () => {
     return (
         <div className="flex flex-row-reverse lg:bg-[#ededed] lg:dark:bg-[#0f0f0f]">
-            <section className="flex flex-col text-white p-2 bg-faqImage bg-contain w-screen bg-no-repeat min-h-screen lg:hidden">
+            <section className="flex flex-col text-white p-2 bg-faqImage bg-cover w-screen bg-no-repeat lg:hidden">
                 <div className="lg:hidden">
                     <div className="">
                         <h1>
@@ -76,6 +76,7 @@ const Faq = () => {
                     src="/themes/faq/faq_desktop.jpg"
                     width={1618}
                     height={1080}
+                    alt="Rozkręcimy Twój biznes w internecie"
                 />
             </div>
         </div>

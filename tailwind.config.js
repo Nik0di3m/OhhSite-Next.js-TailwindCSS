@@ -60,5 +60,5 @@ module.exports = {
             justifyContent: ["disabled"],
         },
     },
-    plugins: [],
+    plugins: [require("tailwind-scrollbar-hide")],
 };
