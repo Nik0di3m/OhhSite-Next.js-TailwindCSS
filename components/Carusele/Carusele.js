@@ -34,6 +34,7 @@ const Carusele = () => {
                             width={300}
                             height={150}
                             key={item.image}
+                            alt={item.alt}
                         />
                     </div>
                 ))}
