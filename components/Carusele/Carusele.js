@@ -17,7 +17,10 @@ const Carusele = () => {
                             className="flex-shrink-0"
                             key={item.image}
                         >
-                            <img src={item.image} />
+                            <img
+                                src={item.image}
+                                alt={item.alt}
+                            />
                         </div>
                     ))}
                 </div>
@@ -31,10 +34,10 @@ const Carusele = () => {
                     >
                         <Image
                             src={item.image}
+                            alt={item.alt}
                             width={300}
                             height={150}
                             key={item.image}
-                            alt={item.alt}
                         />
                     </div>
                 ))}
