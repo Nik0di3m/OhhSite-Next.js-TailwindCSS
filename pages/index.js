@@ -16,8 +16,8 @@ import axios from "../axios";
 
 export default function Home() {
     const [api, setApi] = useState([]);
-    const getAPI = () => {
-        axios
+    const getAPI = async () => {
+        await axios
             .get("/homes")
             .then((res) => {
                 console.log(res);
