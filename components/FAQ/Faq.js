@@ -40,7 +40,7 @@ const Faq = ({ title, text1, text2, text3, text4 }) => {
 
                     <div className="hidden max-w-[50%] lg:flex">
                         <Image
-                            src="/themes/faq/faq_desktop.jpg"
+                            src="/themes/faq/faq_desktop.webp"
                             width={1618}
                             height={1080}
                             alt="Rozkręcimy Twój biznes w internecie"
