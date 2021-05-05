@@ -5,23 +5,30 @@ import {
 } from "@heroicons/react/outline";
 import Cards from "./Cards";
 
-const CardsContaner = () => {
+const CardsContaner = ({
+    title1,
+    title2,
+    title3,
+    text1,
+    text2,
+    text3,
+}) => {
     return (
         <div className="flex flex-wrap justify-around items-center w-screen lg:mt-20">
             <Cards
                 icon={<ShoppingCartIcon className="h-14" />}
-                title="Sklepy internetowe"
-                text="Przenieś swój biznes do internetu"
+                title={title1}
+                text={text1}
             />
             <Cards
                 icon={<SpeakerphoneIcon className="h-14" />}
-                title="Pozycjonowanie"
-                text="Zwiększ widoczność strony"
+                title={title3}
+                text={text3}
             />
             <Cards
                 icon={<GlobeAltIcon className="h-14" />}
-                title="Sklepy internetowe"
-                text="Zadbaj o wizerunek Twojej firmy w internecie"
+                title={title2}
+                text={text2}
             />
         </div>
     );
