@@ -2,12 +2,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { slides } from "./Slides";
 
-const Carusele = () => {
+const Carusele = ({ title }) => {
     return (
         <div className="flex flex-col text-center justify-center items-center mt-6 lg:mt-4">
             <div>
                 <h1 className="text-5xl shadow-ul">
-                    Zaufali nam!
+                    {title}
                 </h1>
             </div>
             <div className="flex relative mt-8 lg:hidden">

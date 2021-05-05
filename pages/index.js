@@ -57,9 +57,20 @@ export default function Home() {
                     smalltitle={api.AboutSmallTitle}
                     text={api.AboutText}
                 />
-                <Faq />
-                <Carusele />
-                <Contact />
+                <Faq
+                    title={api.FaqTitle}
+                    text1={api.Faq1Text}
+                    text2={api.Faq2Text}
+                    text3={api.Faq3Text}
+                    text4={api.Faq4Text}
+                />
+                <Carusele title={api.ClientTitle} />
+                <Contact
+                    title={api.ContactTitle}
+                    text={api.ContactText}
+                    phone={api.Phone}
+                    mail={api.Mail}
+                />
                 <Footer />
             </div>
         </div>
