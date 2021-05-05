@@ -22,13 +22,13 @@ const CardsContaner = ({
             />
             <Cards
                 icon={<SpeakerphoneIcon className="h-14" />}
-                title={title3}
-                text={text3}
+                title={title2}
+                text={text2}
             />
             <Cards
                 icon={<GlobeAltIcon className="h-14" />}
-                title={title2}
-                text={text2}
+                title={title3}
+                text={text3}
             />
         </div>
     );

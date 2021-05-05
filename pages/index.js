@@ -18,10 +18,10 @@ export default function Home() {
     const [api, setApi] = useState([]);
     const getAPI = async () => {
         await axios
-            .get("/homes")
+            .get("/home-1")
             .then((res) => {
                 console.log(res);
-                setApi(res.data[0]);
+                setApi(res.data);
             })
             .catch((err) => console.log(err));
     };
