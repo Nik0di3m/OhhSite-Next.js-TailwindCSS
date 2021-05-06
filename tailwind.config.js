@@ -29,6 +29,8 @@ module.exports = {
                 pingOne: "pingOne 500ms ease-in",
                 showDrop: "showDrop 200ms ease-in",
                 offDrop: "offDrop 200ms forwards",
+                textFade: "textFade 500ms ease-in",
+                textFade2: "textFade2 1000ms ease-in",
             },
             keyframes: {
                 wiggle: {
@@ -54,6 +56,20 @@ module.exports = {
                         transform: "scaleY(0)",
                         visable: "hidden",
                     },
+                },
+                textFade: {
+                    "0%": {
+                        transform: "translateX(-2000px)",
+                    },
+                    "100%": {
+                        transform: "translateX(0px)",
+                    },
+                },
+                textFade2: {
+                    "0%": {
+                        transform: "translateX(2000px)",
+                    },
+                    "100%": { transform: "translateX(0)" },
                 },
             },
         },
