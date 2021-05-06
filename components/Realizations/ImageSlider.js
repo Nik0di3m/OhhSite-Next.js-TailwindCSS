@@ -8,17 +8,11 @@ import { useEffect, useState } from "react";
 
 const ImageSlider = ({ slides }) => {
     const [current, setCurrent] = useState(0);
-    const [current1, setCurrent1] = useState(1);
-    const [current2, setCurrent2] = useState(1);
     const length = slides.length;
 
     const nextSilde = () => {
         setCurrent(
             current === length - 1 ? 0 : current + 1
-        );
-        setCurrent1(current1 === length - 1 ? 0 : current);
-        setCurrent2(
-            current2 === length - 1 ? 2 : current + 2
         );
     };
 
@@ -29,7 +23,7 @@ const ImageSlider = ({ slides }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSilde();
-        }, 4000);
+        }, 3000);
 
         return () => clearInterval(interval);
     });
@@ -42,11 +36,11 @@ const ImageSlider = ({ slides }) => {
                             className={`${
                                 index === current - 1
                                     ? "transition-all duration-2000 opacity-70"
-                                    : "transition-all duration-[2000] opacity-0"
+                                    : "transition-all duration-[2000] opacity-20"
                             }`}
                             key={index}
                         >
-                            {index === current1 && (
+                            {index === current - 1 && (
                                 <Image
                                     src={slide.image}
                                     layout="fill"
@@ -66,7 +60,7 @@ const ImageSlider = ({ slides }) => {
                                 className={`${
                                     index === current
                                         ? "transition-all duration-1000 scale-110"
-                                        : "transition-all duration-1000 opacity-0"
+                                        : "transition-all duration-1000 opacity-100"
                                 }`}
                                 key={index}
                             >
@@ -88,13 +82,13 @@ const ImageSlider = ({ slides }) => {
                     return (
                         <div
                             className={`${
-                                index === current2
+                                index === current + 1
                                     ? "transition-all duration-2000 scale-110 opacity-70"
-                                    : "transition-all duration-2000 opacity-0"
+                                    : "transition-all duration-2000 opacity-20"
                             }`}
                             key={index}
                         >
-                            {index === current2 && (
+                            {index === current + 1 && (
                                 <Image
                                     src={slide.image}
                                     layout="fill"

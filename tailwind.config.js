@@ -49,7 +49,7 @@ module.exports = {
                     "100%": { transform: "scaleY(1)" },
                 },
                 offDrop: {
-                    "0%": { transform: "scaleY(1)" },
+                    "0%": { transform: "scaleY(0)" },
                     "100%": {
                         transform: "scaleY(0)",
                         visable: "hidden",
