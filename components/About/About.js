@@ -13,8 +13,8 @@ const anim = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 1,
-            ease: "easeIn",
+            duration: 2,
+            ease: "easeInOut",
         },
     },
 };

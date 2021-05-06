@@ -59,7 +59,7 @@ const ImageSlider = ({ slides }) => {
                             <div
                                 className={`${
                                     index === current
-                                        ? "transition-all duration-1000 scale-110"
+                                        ? "transition-all duration-1000"
                                         : "transition-all duration-1000 opacity-100"
                                 }`}
                                 key={index}
@@ -83,7 +83,7 @@ const ImageSlider = ({ slides }) => {
                         <div
                             className={`${
                                 index === current + 1
-                                    ? "transition-all duration-2000 scale-110 opacity-70"
+                                    ? "transition-all duration-2000 opacity-70"
                                     : "transition-all duration-2000 opacity-20"
                             }`}
                             key={index}
