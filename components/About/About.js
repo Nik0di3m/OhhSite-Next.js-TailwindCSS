@@ -1,9 +1,55 @@
 import Image from "next/image";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import VisibilitySensor from "react-visibility-sensor";
+import { useEffect, useState } from "react";
+const anim = {
+    hidden: {
+        opacity: 1,
+        pathLength: 0,
+        x: -2000,
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 1,
+            ease: "easeIn",
+        },
+    },
+};
 
 const About = ({ bigtitle, smalltitle, text }) => {
+    const [enable, setEnable] = useState(false);
+
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+        if (position >= 1000) {
+            setEnable(true);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll, {
+            passive: true,
+        });
+
+        return () => {
+            window.removeEventListener(
+                "scroll",
+                handleScroll
+            );
+        };
+    });
     return (
-        <div className="flex mt-20">
+        <motion.div
+            className="flex mt-20"
+            variants={anim}
+            initial="hidden"
+            animate={enable ? "visible" : ""}
+        >
             <section className="flex flex-col items-center justify-center bg-[#ededed] p-8 text-center dark:bg-[#0f0f0f] lg:max-w-[50vw]">
                 <div>
                     <h1 className=" lg:text-6xl">
@@ -30,7 +76,7 @@ const About = ({ bigtitle, smalltitle, text }) => {
                     alt="Content"
                 />
             </div>
-        </div>
+        </motion.div>
     );
 };
 
