@@ -14,10 +14,6 @@ const Realizations = ({ title }) => {
             <div>
                 <ImageSlider slides={SliderData} />
             </div>
-            <Button
-                text="Zobacz więcej!"
-                link="/realizacje"
-            />
         </div>
     );
 };

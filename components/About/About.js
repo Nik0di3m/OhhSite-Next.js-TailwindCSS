@@ -13,9 +13,12 @@ const About = ({ bigtitle, smalltitle, text }) => {
                         {smalltitle}
                     </h1>
                 </div>
-                <div className="text-justify mt-3">
-                    <p>{text}</p>
-                </div>
+                <div
+                    className="text-justify mt-3"
+                    dangerouslySetInnerHTML={{
+                        __html: text,
+                    }}
+                ></div>
                 <Button text="Więcej!" link="/o-nas" />
                 <Button text="Kontakt" link="/kontakt" />
             </section>

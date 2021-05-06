@@ -11,4 +11,7 @@ export const SliderData = [
     {
         image: "/themes/slider/rel_emtech.webp",
     },
+    {
+        image: "/themes/slider/as-rent.png",
+    },
 ];

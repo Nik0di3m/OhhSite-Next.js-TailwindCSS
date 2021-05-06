@@ -31,7 +31,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="bg-white overflow-hidden text-black dark:bg-[#1d1d1d] dark:text-white">
+        <div className="bg-[#f2f2f2] overflow-hidden text-black dark:bg-[#1d1d1d] dark:text-white">
             <Head>
                 <title>{api.MetaTitle}</title>
                 <meta

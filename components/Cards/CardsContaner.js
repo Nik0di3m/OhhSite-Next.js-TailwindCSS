@@ -14,7 +14,7 @@ const CardsContaner = ({
     text3,
 }) => {
     return (
-        <div className="flex flex-wrap justify-around items-center w-screen lg:mt-20">
+        <div className="flex flex-wrap justify-around items-center z-50 w-screen lg:mt-20">
             <Cards
                 icon={<ShoppingCartIcon className="h-14" />}
                 title={title1}

@@ -15,6 +15,9 @@ module.exports = {
             main: "#24cee5",
         },
         extend: {
+            transitionDuration: {
+                2000: "2000ms",
+            },
             backgroundImage: {
                 sidebarLogo: "url(/themes/sidebarlogo.svg)",
                 faqImage: "url(/themes/faq/faq.webp)",

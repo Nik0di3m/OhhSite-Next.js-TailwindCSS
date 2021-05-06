@@ -1,63 +1,62 @@
 export const partilcesConfig = {
     particles: {
         number: {
-            value: 165,
+            value: 60,
             density: {
-                enable: false,
+                enable: true,
                 value_area: 800,
             },
         },
         color: {
-            value: "#24cee5",
+            value: "#2fb8ca",
         },
         shape: {
-            type: "star",
+            type: "circle",
             stroke: {
                 width: 0,
                 color: "#000000",
             },
             polygon: {
-                nb_sides: 5,
+                nb_sides: 6,
             },
             image: {
-                src:
-                    "http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg",
+                src: "img/github.svg",
                 width: 100,
                 height: 100,
             },
         },
         opacity: {
-            value: 0.9,
+            value: 0.7,
+            random: false,
+            anim: {
+                enable: false,
+                speed: 0.2,
+                opacity_min: 0.1,
+                sync: true,
+            },
+        },
+        size: {
+            value: 3,
             random: true,
             anim: {
                 enable: false,
                 speed: 1,
-                opacity_min: 0.1,
+                size_min: 0.1,
                 sync: false,
             },
         },
-        size: {
-            value: 4.1,
-            random: true,
-            anim: {
-                enable: false,
-                speed: 22.80405405405404,
-                size_min: 20.270270270270256,
-                sync: true,
-            },
-        },
         line_linked: {
-            enable: false,
+            enable: true,
             distance: 150,
-            color: "#ffffff",
+            color: "#33d2d2",
             opacity: 0.4,
             width: 1,
         },
         move: {
             enable: true,
-            speed: 3.156640387635437,
-            direction: "bottom-left",
-            random: true,
+            speed: 2,
+            direction: "none",
+            random: false,
             straight: false,
             out_mode: "out",
             bounce: false,
@@ -77,26 +76,26 @@ export const partilcesConfig = {
             },
             onclick: {
                 enable: false,
-                mode: "remove",
+                mode: "push",
             },
             resize: true,
         },
         modes: {
             grab: {
-                distance: 200,
+                distance: 400,
                 line_linked: {
                     opacity: 1,
                 },
             },
             bubble: {
-                distance: 215.37162162162147,
-                size: 12.668918918918909,
-                duration: 0.9290540540540533,
+                distance: 400,
+                size: 40,
+                duration: 2,
                 opacity: 8,
                 speed: 3,
             },
             repulse: {
-                distance: 101.35135135135127,
+                distance: 200,
                 duration: 0.4,
             },
             push: {
