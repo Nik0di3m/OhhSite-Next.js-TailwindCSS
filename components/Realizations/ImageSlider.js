@@ -41,13 +41,13 @@ const ImageSlider = ({ slides }) => {
                         <div
                             className={`${
                                 index === current - 1
-                                    ? "transition-all duration-1000 opacity-70"
-                                    : "transition-all duration-[1000] opacity-0"
+                                    ? "transition-all duration-2000 opacity-70"
+                                    : "transition-all duration-[2000] opacity-0"
                             }`}
                             key={index}
                         >
                             {index === current1 && (
-                                <img
+                                <Image
                                     src={slide.image}
                                     layout="fill"
                                     objectFit="contain"
@@ -59,19 +59,19 @@ const ImageSlider = ({ slides }) => {
                 })}
             </div>
             <div className="flex lg:absolute lg:top-0 lg:left-[20%] z-20">
-                <div className="flex relative mt-4 shadow-strong overflow-hidden justify-center items-center overflow-x-auto h-52 w-[95vw] text-[#24cee5] lg:h-[52vh] sm:h-[50vh] lg:max-w-6xl">
+                <div className="flex relative mt-4 overflow-hidden justify-center items-center overflow-x-auto h-52 w-[95vw] text-[#24cee5] lg:h-[52vh] sm:h-[50vh] lg:max-w-6xl">
                     {slides.map((slide, index) => {
                         return (
                             <div
                                 className={`${
                                     index === current
-                                        ? "transition-all duration-2000 scale-110"
-                                        : "transition-all duration-2000 opacity-0"
+                                        ? "transition-all duration-1000 scale-110"
+                                        : "transition-all duration-1000 opacity-0"
                                 }`}
                                 key={index}
                             >
                                 {index === current && (
-                                    <img
+                                    <Image
                                         src={slide.image}
                                         layout="fill"
                                         objectFit="contain"
@@ -89,13 +89,13 @@ const ImageSlider = ({ slides }) => {
                         <div
                             className={`${
                                 index === current2
-                                    ? "transition-all duration-1000 scale-110 opacity-70"
-                                    : "transition-all duration-1000 opacity-0"
+                                    ? "transition-all duration-2000 scale-110 opacity-70"
+                                    : "transition-all duration-2000 opacity-0"
                             }`}
                             key={index}
                         >
                             {index === current2 && (
-                                <img
+                                <Image
                                     src={slide.image}
                                     layout="fill"
                                     objectFit="contain"
